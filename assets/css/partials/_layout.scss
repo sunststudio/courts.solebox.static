@@ -1,0 +1,13 @@
+:root {
+  --site-spacing: 1rem;
+}
+
+@include md {                             
+  :root {
+  --site-spacing: 4rem;
+  }
+}
+
+.inner {
+  margin: 0 var(--site-spacing);
+}

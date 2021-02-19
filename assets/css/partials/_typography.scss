@@ -1,0 +1,39 @@
+html {
+  font-size: 62.5%; 
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+}
+p {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+.cap {
+  text-transform: capitalize;
+}
+
+.smallprint {
+  font-size: .8rem;
+  line-height: 1.5;
+}
+
+.bold,
+strong {
+  font-weight: bold;
+}

@@ -1,0 +1,8 @@
+.DS_Store
+config.codekit3
+config.codekit*
+.*~
+.sass*/
+.nova/
+_develop/
+_bu/
