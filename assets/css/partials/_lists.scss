@@ -6,16 +6,34 @@
   border-bottom: 2px solid $prim;
   display: flex;
   align-items: center;
-  font-size: 3.2rem;
+  font-size: $font-medium;
   padding: 1rem 0;
   text-transform: uppercase;
 }
+
+// order mobile
+.l__no { display: none; }
+.l__tag  { order: 3; }
+.l__images  { order: 1; }
+.l__title { order: 2; }
+
+
+@include md {
+  
+// order desktop
+.l__no { display: block; order: 0; }
+.l__tag  { order: 0; }
+.l__images  { order: 0; }
+.l__title { order: 0; }
+
+}
+
 
 .l__entry > div {
   margin-right: 2rem;
 }
 .l__tag {
-  flex: 0 1 200px;
+  flex: 0 0 200px;
 }
 
 .l__link {

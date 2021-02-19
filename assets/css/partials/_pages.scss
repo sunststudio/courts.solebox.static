@@ -1,0 +1,12 @@
+.page__header {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 12rem;
+  margin-bottom: 6rem;
+}
+
+.filter {
+  margin-left: auto;
+  font-size: $font-small;
+  text-transform: uppercase;
+}
