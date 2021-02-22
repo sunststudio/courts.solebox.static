@@ -26,15 +26,28 @@ button:focus {
 }
 
 .button {
-  border: 2px solid $prim;
+  font-size: 1.5rem;
   font-weight: bold;
+  border: 2px solid $prim;
   display: inline-block;
   padding: 1rem 2rem;
-  font-size: 1.5rem;
   border-radius: 2rem;
   transition: all 0.1s linear;
   &:hover {
     background-color: $prim;
     color: $bgco;
   }
+}
+
+.button--big {
+  font-size: var(--font-st);
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 1.8rem 3.2rem;
+  border-radius: 3.2rem;
+}
+
+.nav__btn {
+  text-align: center;
+  margin: $spacing-lg 0;
 }

@@ -37,6 +37,9 @@
       border-bottom: none;
     }
   }
+  a.noline {
+    border-bottom: none;
+  }
 }
 
 .footer__solebox {
@@ -47,6 +50,9 @@
 
 .jumpman {
   fill: $bgco;
-  width: 60px;
-  height: auto;
+  height: 60px;
+}
+.pin {
+  fill: $bgco;
+  height: 32px;
 }
