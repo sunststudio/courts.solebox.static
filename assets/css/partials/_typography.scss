@@ -1,8 +1,31 @@
+// TYPOGRAPHIC VARS
+
+:root {
+  --font-base: 50%;
+  --font-tiny: 1rem;
+  --font-small: 1.8rem;
+  --font-normal: 2.2rem;
+  --font-medium: 2.4rem;
+  --font-huge: 6rem;
+}
+
+@media (min-width: 900px) {                             
+  :root {
+  --font-base: 62.5%;
+  --font-medium: 3.2rem;
+  }
+}
+
 html {
-  font-size: 62.5%; 
+  font-size: var(--font-base); 
   -webkit-font-smoothing: antialiased;
   text-align: left;
 }
+
+body {
+  font-family: $font-base;
+}
+
 p {
   line-height: 1.5rem;
   margin-top: 1.5rem;
@@ -22,12 +45,12 @@ h6 {
 }
 
 h1 {
-  font-size: $font-huge;
-  letter-spacing: -0.2rem;
+  font-size: var(--font-huge);
+  letter-spacing: -0.1rem;
 }
 
 h4 {
-  font-size: $font-small;
+  font-size: var(--font-small);
   font-weight: normal;
 }
 
@@ -39,7 +62,7 @@ h4 {
 }
 
 .smallprint {
-  font-size: $font-tiny;
+  font-size: var(--font-tiny);
   line-height: 1.5;
 }
 
