@@ -1,12 +1,12 @@
 .page__header {
   display: flex;
   align-items: flex-end;
-  margin-top: 12rem;
-  margin-bottom: 6rem;
+  margin-top: $spacing-bg;
+  margin-bottom: $spacing-md;
 }
 
 .filter {
   margin-left: auto;
-  font-size: $font-small;
+  font-size: var(--font-small);
   text-transform: uppercase;
 }

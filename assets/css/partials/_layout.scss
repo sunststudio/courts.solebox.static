@@ -2,6 +2,12 @@
   --site-spacing: 1rem;
 }
 
+@include sm {                             
+  :root {
+  --site-spacing: 2rem;
+  }
+}
+
 @include md {                             
   :root {
   --site-spacing: 4rem;

@@ -1,0 +1,49 @@
+.entry {
+  max-width: 1080px;
+  @include hg {
+    max-width: 1420px;
+  }
+}
+
+.entry__content {
+  margin-top: $spacing-hg;
+  font-size: var(--font-small);
+  line-height: 1.5;
+}
+
+.entry__fields {
+  text-transform: uppercase;
+  display: grid;
+  gap: 2rem;
+  margin: $spacing-md 0;
+  @include sm {
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  @include md {
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.entry__note {
+  margin: $spacing-md 0;
+  p {
+    max-width: 75ch;
+    line-height: 1.5;
+  }
+}
+
+.dl_inline dt {
+  float: left;
+}
+
+.entry__images {
+  margin-top: $spacing-hg;
+  img {
+    margin: $spacing-lg 0;
+  }
+  img:first-of-type {
+    margin-top: $spacing-sm;
+  }
+}
