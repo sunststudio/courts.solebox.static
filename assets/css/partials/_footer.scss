@@ -1,0 +1,52 @@
+.site__footer {
+  margin-top: 16rem;
+  padding: 4rem 0;
+  background: $prim;
+  color: $bgco;
+  font-size: var(--font-tiny);
+  text-transform: uppercase;
+  a {
+  color: $bgco;
+  opacity: 1;
+  transition: all .3s ease;
+  &:hover {
+    opacity: 0.7;
+  }
+  }
+  
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+.footer__nav ul {
+  @include sm {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer__nav {
+  li {
+    margin: 0 3rem 0.5rem 0;
+  }
+  a {
+    border-bottom: 1px solid $bgco;
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}
+
+.footer__solebox {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.jumpman {
+  fill: $bgco;
+  width: 60px;
+  height: auto;
+}

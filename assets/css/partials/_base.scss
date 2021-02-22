@@ -11,15 +11,30 @@ html {
   box-sizing: inherit;
 }
 
+html {
+  background-color: $bgco;
+  color: $prim;
+}
+
+
+// STICKY FOOTER
+
 html,
 body {
   height: 100%;
 }
 
-html {
-  background-color: $bgco;
-  color: $prim;
+body {
+  display: flex;
+  flex-direction: column;
 }
+.site__content {
+  flex: 1 0 auto;
+}
+.site__footer {
+  flex-shrink: 0;
+}
+
 
 // LINKS
 
@@ -31,6 +46,7 @@ a {
 a.underline {
   border-bottom: 1px solid;
 }
+
 
 // IMG
 
