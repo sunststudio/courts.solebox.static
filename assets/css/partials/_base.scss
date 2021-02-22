@@ -21,11 +21,7 @@ html {
   color: $prim;
 }
 
-body {
-  font-family: $font-base;
-}
-
-// links
+// LINKS
 
 a {
   color: $prim;
@@ -36,7 +32,7 @@ a.underline {
   border-bottom: 1px solid;
 }
 
-// images
+// IMG
 
 img {
   max-width: 100%;
