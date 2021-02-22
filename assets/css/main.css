@@ -215,18 +215,16 @@ img {
   display: block; }
 
 :root {
-  --font-base: 50%;
-  --font-tiny: 1.2rem;
-  --font-small: 1.8rem;
-  --font-normal: 2.2rem;
-  --font-medium: 2.4rem;
-  --font-huge: 6rem; }
+  --font-base: 52.5%;
+  --font-sm: 1.2rem;
+  --font-st: 2rem;
+  --font-md: 3.2rem;
+  --font-bg: 4.8rem;
+  --font-hg: 6.4rem; }
 
 @media (min-width: 900px) {
   :root {
-    --font-base: 62.5%;
-    --font-medium: 3.2rem;
-    --font-huge: 8rem; } }
+    --font-base: 62.5%; } }
 
 html {
   font-size: var(--font-base);
@@ -237,9 +235,9 @@ body {
   font-family: "Helvetica Neue", sans-serif; }
 
 p {
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0; }
+  font-size: var(--font-normal);
+  line-height: 1.25;
+  margin-top: 3rem; }
 
 /* Headings */
 h1,
@@ -253,11 +251,15 @@ h6 {
   text-transform: uppercase; }
 
 h1 {
-  font-size: var(--font-huge);
+  font-size: var(--font-hg);
+  letter-spacing: -0.1rem; }
+
+h2 {
+  font-size: var(--font-bg);
   letter-spacing: -0.1rem; }
 
 h4 {
-  font-size: var(--font-small);
+  font-size: var(--font-st);
   font-weight: normal; }
 
 .upper {
@@ -267,8 +269,16 @@ h4 {
   text-transform: capitalize; }
 
 .smallprint {
-  font-size: var(--font-tiny);
+  font-size: var(--font-sm);
   line-height: 1.5; }
+
+.bigprint {
+  font-weight: bold;
+  line-height: 1.25; }
+  .bigprint p {
+    font-size: var(--font-bg);
+    max-width: 40ch;
+    margin: 8rem 0; }
 
 .bold,
 strong {
@@ -300,7 +310,7 @@ strong {
 
 .site__name {
   text-transform: uppercase;
-  font-size: var(--font-small);
+  font-size: var(--font-st);
   letter-spacing: 0;
   line-height: 1;
   margin: 0; }
@@ -367,7 +377,7 @@ button:focus {
   border-bottom: 2px solid #222222;
   display: flex;
   align-items: center;
-  font-size: var(--font-medium);
+  font-size: var(--font-md);
   padding: 1rem 0;
   text-transform: uppercase; }
 
@@ -453,7 +463,7 @@ button:focus {
   padding: 4rem 0;
   background: #222222;
   color: #EDEDED;
-  font-size: var(--font-tiny);
+  font-size: var(--font-sm);
   text-transform: uppercase; }
   .site__footer a {
     color: #EDEDED;
@@ -497,7 +507,7 @@ button:focus {
 
 .filter {
   margin-left: auto;
-  font-size: var(--font-small);
+  font-size: var(--font-sm);
   text-transform: uppercase; }
 
 .entry {
@@ -508,14 +518,14 @@ button:focus {
 
 .entry__content {
   margin-top: 16rem;
-  font-size: var(--font-small);
+  font-size: var(--font-st);
   line-height: 1.5; }
 
 .entry__fields {
   text-transform: uppercase;
   display: grid;
   gap: 2rem;
-  margin: 4rem 0; }
+  margin: 8rem 0; }
   @media (min-width: 600px) {
     .entry__fields {
       grid-template-columns: 1fr 1fr;
@@ -534,6 +544,9 @@ button:focus {
 .dl_inline dt {
   float: left; }
 
+.entry__map {
+  margin-top: 8rem; }
+
 .entry__images {
   margin-top: 16rem; }
   .entry__images img {
@@ -543,7 +556,7 @@ button:focus {
 
 .archive__nav {
   margin-top: 4rem;
-  font-size: var(--font-small);
+  font-size: var(--font-st);
   text-transform: uppercase; }
   @media (min-width: 900px) {
     .archive__nav {
@@ -560,11 +573,12 @@ button:focus {
     height: 4rem;
     margin-left: 1rem;
     position: relative;
-    top: -8px;
+    top: -2px;
     transition: all .5s ease-in-out; }
     @media (min-width: 900px) {
       .archive__back .arrow--back {
-        height: 4.8rem; } }
+        height: 5.6rem;
+        top: -12px; } }
 
 a:hover .arrow--back {
   transform: rotate(-360deg); }

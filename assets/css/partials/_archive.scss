@@ -7,7 +7,7 @@
 
 .entry__content {
   margin-top: $spacing-hg;
-  font-size: var(--font-small);
+  font-size: var(--font-st);
   line-height: 1.5;
 }
 
@@ -15,7 +15,7 @@
   text-transform: uppercase;
   display: grid;
   gap: 2rem;
-  margin: $spacing-md 0;
+  margin: $spacing-lg 0;
   @include sm {
     grid-template-columns:  1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -38,6 +38,9 @@
   float: left;
 }
 
+.entry__map {
+  margin-top: $spacing-lg;
+}
 .entry__images {
   margin-top: $spacing-hg;
   img {
@@ -50,12 +53,11 @@
 
 .archive__nav {
   margin-top: $spacing-md;
-  font-size: var(--font-small);
+  font-size: var(--font-st);
   text-transform: uppercase;
   @include md {
     display: flex;
     }
-
 }
 
 .archive__back {
@@ -68,13 +70,14 @@
   }
   .arrow--back {
     height: 4rem;
-    @include md {
-    height: 4.8rem;
-    }
     margin-left: 1rem;
     position: relative;
-    top: -8px;
+    top: -2px;
     transition: all .5s ease-in-out;
+    @include md {
+      height: 5.6rem;
+      top: -12px;
+    }
   }
 }
 
