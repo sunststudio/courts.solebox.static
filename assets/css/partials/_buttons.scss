@@ -27,10 +27,10 @@ button:focus {
 
 .button {
   font-size: 1.5rem;
-  font-weight: bold;
+  // font-weight: bold;
   border: 2px solid $prim;
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem 2.2rem;
   border-radius: 2rem;
   transition: all 0.1s linear;
   &:hover {
@@ -40,11 +40,23 @@ button:focus {
 }
 
 .button--big {
-  font-size: var(--font-st);
+  font-size: var(--font-md);
   font-weight: normal;
   text-transform: uppercase;
-  padding: 1.8rem 3.2rem;
-  border-radius: 3.2rem;
+  padding: 1.8rem 4.8rem;
+  border-radius: 4rem;
+}
+
+.button--protag {
+  font-size: var(--font-md);
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 1.8rem 4rem;
+  margin: 0 $spacing-md;
+  // display: inline-block;
+  border-radius: 4.8rem;
+  color: $bgco;
+  border: 2px solid $bgco;
 }
 
 .nav__btn {

@@ -11,43 +11,100 @@
   z-index: -1;
 }
 
+// PROTAGONIST BARS
 
-@keyframes ticker {
-  0% {
-    transform: translate3d(0, 0, 0);
-    visibility: visible;
-  }
-  100% {
-    transform: translate3d(-100%, 0, 0);
+.protag {
+  font-size: var(--font-sm);
+  background: #fff;
+  p {
+    line-height: 2.5rem;
+    margin: 0;
   }
 }
 
-.ticker__wrap {
-  width: 100%;
-  overflow: hidden;
-  box-sizing: content-box;
-  margin: $spacing-hg 0;
-  padding-left: 100%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: $prim;
-  color: $bgco;
-  font-size: var(--font-md);
+.protag__cols,
+.protag__bar {
+  display: flex;
 }
 
-.ticker {
-  display: inline-block;
-  padding-right: 100%;
+// columns
+
+.protag__cover {
+  width: 50%;
+  img {
+    width: 100%;
+  }
+}
+.protag__body {
+  width: 50%;
+}
+
+.protag__content {
+  padding: 2rem 0;
+}
+
+.protag__cols .protag__content div {
+  margin: 4rem 0;
+}
+
+.protag__facts {
+   text-transform: uppercase;
+   line-height: 2.5rem;
+   flex: 0 0 200px;
+   dt {
+      font-weight: bold;
+   } 
+}
+
+.protag__text {
+  align-self: flex-start;
+  flex: 0 0 600px;
+  p {
+    max-width: 75ch;
+  }
+}
+
+.protag__btn {
+  background-color: $spot;
+  text-align: center;
+  padding: 3.2rem 0;
+  align-self: center;
+}
+
+.protag__link {
+  margin-left: auto;
   white-space: nowrap;
-  box-sizing: content-box;
-  animation-name: ticker;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-duration: 30s;
-
-  &__item {
-    display: inline-block;
-    margin: 0 4rem;
+  display: flex;
+  a {
+    align-self: center;
   }
+}
+
+// IMAGES
+
+// 4 image bar 
+
+.four__images {
+  margin-left: -8vw;
+  margin-right: 8vw;
+  width: calc(100% + 16vw);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4vw;
+  a img {
+    @include ease;
+  }
+  a:hover img {
+    opacity: 0.7;
+  }
+}
+
+.lay__img {
+  margin: $spacing-lg 0;
+}
+
+
+.img--right {
+  margin-left: auto;
 }
 

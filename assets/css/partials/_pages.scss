@@ -10,3 +10,14 @@
   font-size: var(--font-sm);
   text-transform: uppercase;
 }
+
+.pattern {
+  width: 100%;
+  display: block;
+  background: url('/assets/elm/pattern-02.png') 0 0 no-repeat;
+  background-size: cover;
+}
+
+.pattern--strip {
+  height: 200px;
+}
