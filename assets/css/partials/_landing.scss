@@ -42,8 +42,11 @@
   }
 }
 
-.protag__content {
-  padding: 2rem 0;
+.protag__body {
+  padding-bottom: 2rem;
+}
+
+.protag__content--bar {
   div { margin: 4rem 0; }
   @include lg {
     display: flex;

@@ -609,15 +609,17 @@ button:focus {
   .protag__body {
     width: 50%; } }
 
-.protag__content {
-  padding: 2rem 0; }
-  .protag__content div {
-    margin: 4rem 0; }
-  @media (min-width: 1200px) {
-    .protag__content {
-      display: flex; }
-      .protag__content div {
-        margin: 0; } }
+.protag__body {
+  padding-bottom: 2rem; }
+
+.protag__content--bar div {
+  margin: 4rem 0; }
+
+@media (min-width: 1200px) {
+  .protag__content--bar {
+    display: flex; }
+    .protag__content--bar div {
+      margin: 0; } }
 
 .protag__cols .protag__content div {
   margin: 4rem 0; }
