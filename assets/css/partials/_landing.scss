@@ -47,6 +47,7 @@
 }
 
 .protag__content--bar {
+  padding: 2rem 0;
   div { margin: 4rem 0; }
   @include lg {
     display: flex;
