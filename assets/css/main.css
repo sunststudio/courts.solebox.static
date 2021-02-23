@@ -585,7 +585,7 @@ button:focus {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: url("/img/cover-01.jpg") 0 0 no-repeat;
+  background: url("../../img/cover-01.jpg") 0 0 no-repeat;
   background-size: cover;
   z-index: -1; }
 
@@ -596,20 +596,28 @@ button:focus {
     line-height: 2.5rem;
     margin: 0; }
 
-.protag__cols,
-.protag__bar {
-  display: flex; }
+@media (min-width: 1200px) {
+  .protag__cols,
+  .protag__bar {
+    display: flex; } }
 
-.protag__cover {
-  width: 50%; }
-  .protag__cover img {
-    width: 100%; }
+.protag__cover img {
+  width: 100%; }
 
-.protag__body {
-  width: 50%; }
+@media (min-width: 1200px) {
+  .protag__cover,
+  .protag__body {
+    width: 50%; } }
 
 .protag__content {
   padding: 2rem 0; }
+  .protag__content div {
+    margin: 4rem 0; }
+  @media (min-width: 1200px) {
+    .protag__content {
+      display: flex; }
+      .protag__content div {
+        margin: 0; } }
 
 .protag__cols .protag__content div {
   margin: 4rem 0; }
@@ -673,7 +681,7 @@ button:focus {
 .pattern {
   width: 100%;
   display: block;
-  background: url("/assets/elm/pattern-02.png") 0 0 no-repeat;
+  background: url("../elm/pattern-02.png") 0 0 no-repeat;
   background-size: cover; }
 
 .pattern--strip {

@@ -6,7 +6,7 @@
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: url("/img/cover-01.jpg") 0 0 no-repeat;
+  background: url("../../img/cover-01.jpg") 0 0 no-repeat;
   background-size: cover;
   z-index: -1;
 }
@@ -24,23 +24,31 @@
 
 .protag__cols,
 .protag__bar {
+  @include lg {
   display: flex;
+  }
 }
 
 // columns
 
-.protag__cover {
-  width: 50%;
-  img {
-    width: 100%;
-  }
+.protag__cover img {
+  width: 100%;
 }
+
+.protag__cover, 
 .protag__body {
-  width: 50%;
+  @include lg {
+    width: 50%;
+  }
 }
 
 .protag__content {
   padding: 2rem 0;
+  div { margin: 4rem 0; }
+  @include lg {
+    display: flex;
+    div { margin: 0; }
+  }
 }
 
 .protag__cols .protag__content div {
