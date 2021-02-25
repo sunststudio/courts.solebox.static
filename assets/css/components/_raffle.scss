@@ -1,0 +1,49 @@
+.raffle__banner {
+   background-color: $lgry;
+   background: url('../elm/pattern-big.svg') center center no-repeat; 
+   background-size: cover;
+   margin-top: $spacing-hg;
+   a {
+     @include ease;
+     &:hover {
+        opacity: 0.8;
+      }
+   }
+  
+}
+.raffle__inner {
+  padding: $spacing-md 0;
+  @include md {
+    display: flex;
+    align-items: center;    
+  }
+}
+
+.raffle__img {
+  flex: 2 0 20%;
+}
+
+.raffle__heading {
+  flex: 2 0 60%;
+  margin: $spacing-md 0;
+  @include md {
+    margin: 0 0 0 $spacing-md;
+  }
+}
+
+.raffle__arrow {
+  flex: 1 0 10%;
+  margin-left: auto;
+  margin-right: $spacing-md;
+  max-width: 120px;
+  @include md {
+  max-width: 200px;  
+  }
+}
+.raffle__arrow a svg {
+  transform: translate(0, 0);
+  transition: all 0.2s ease-in-out;
+}
+.raffle__arrow a:hover svg {
+  transform: translate(2rem, 0);
+}

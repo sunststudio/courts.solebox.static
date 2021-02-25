@@ -301,8 +301,11 @@ h2 {
   font-size: var(--font-bg);
   letter-spacing: -0.1rem; }
 
+h3 {
+  font-size: var(--font-md); }
+
 h4 {
-  font-size: var(--font-st);
+  font-size: var(--font-sm);
   font-weight: normal; }
 
 .upper {
@@ -367,7 +370,7 @@ strong {
   width: 100%;
   overflow: hidden;
   box-sizing: content-box;
-  margin: 16rem 0;
+  margin-bottom: 16rem;
   padding-left: 100%;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -674,6 +677,15 @@ button:focus {
   background-size: cover;
   z-index: -1; }
 
+.pattern {
+  width: 100%;
+  display: block;
+  background: url("../elm/pattern-big.svg") center center no-repeat;
+  background-size: cover; }
+
+.pattern--strip {
+  height: 200px; }
+
 .protag {
   font-size: var(--font-sm);
   background: #fff; }
@@ -701,8 +713,9 @@ button:focus {
 .protag__cols .protag__content div {
   margin: 4rem 0; }
 
-.protag__bar .protag__link {
-  padding-left: 4rem; }
+@media (min-width: 1200px) {
+  .protag__bar .protag__link {
+    padding-left: 4rem; } }
 
 .protag__content--bar {
   padding: 2rem 0; }
@@ -717,17 +730,15 @@ button:focus {
 .protag__facts {
   text-transform: uppercase;
   line-height: 2.5rem;
-  flex: 0 0 200px; }
-  .protag__facts dl {
+  flex: 1 0 300px; }
+  .protag__facts p {
     letter-spacing: 0.05rem; }
-  .protag__facts dt {
-    font-family: "NHaasGroteskDSPro-75Bd", "Helvetica Neue", sans-serif;
-    font-weight: normal;
-    letter-spacing: 0.075rem; }
+  .protag__facts p strong {
+    letter-spacing: 0.1rem; }
 
 .protag__text {
   align-self: flex-start;
-  flex: 0 0 600px; }
+  flex: 1 0 600px; }
   .protag__text p {
     max-width: 75ch; }
 
@@ -762,6 +773,50 @@ button:focus {
 .img--right {
   margin-left: auto; }
 
+.raffle__banner {
+  background-color: #CCCBCF;
+  background: url("../elm/pattern-big.svg") center center no-repeat;
+  background-size: cover;
+  margin-top: 16rem; }
+  .raffle__banner a {
+    opacity: 1;
+    transition: all 0.3s ease; }
+    .raffle__banner a:hover {
+      opacity: 0.8; }
+
+.raffle__inner {
+  padding: 4rem 0; }
+  @media (min-width: 900px) {
+    .raffle__inner {
+      display: flex;
+      align-items: center; } }
+
+.raffle__img {
+  flex: 2 0 20%; }
+
+.raffle__heading {
+  flex: 2 0 60%;
+  margin: 4rem 0; }
+  @media (min-width: 900px) {
+    .raffle__heading {
+      margin: 0 0 0 4rem; } }
+
+.raffle__arrow {
+  flex: 1 0 10%;
+  margin-left: auto;
+  margin-right: 4rem;
+  max-width: 120px; }
+  @media (min-width: 900px) {
+    .raffle__arrow {
+      max-width: 200px; } }
+
+.raffle__arrow a svg {
+  transform: translate(0, 0);
+  transition: all 0.2s ease-in-out; }
+
+.raffle__arrow a:hover svg {
+  transform: translate(2rem, 0); }
+
 .header {
   display: flex;
   align-items: flex-end;
@@ -772,15 +827,6 @@ button:focus {
   margin-left: auto;
   font-size: var(--font-sm);
   text-transform: uppercase; }
-
-.pattern {
-  width: 100%;
-  display: block;
-  background: url("../elm/pattern-02.png") 0 0 no-repeat;
-  background-size: cover; }
-
-.pattern--strip {
-  height: 200px; }
 
 .entry {
   max-width: 1080px; }

@@ -38,12 +38,12 @@
   margin: 4rem 0;
 }
 
-
-
 // bar
 
 .protag__bar .protag__link {
+  @include lg {
   padding-left: 4rem;
+  }
 }
 
 .protag__content--bar {
@@ -60,20 +60,19 @@
 .protag__facts {
    text-transform: uppercase;
    line-height: 2.5rem;
-   flex: 0 0 200px;
-   dl {
-     letter-spacing: 0.05rem;
+   flex: 1 0 300px;
+   p {
+   letter-spacing: 0.05rem;
    }
-   dt {
-    font-family: $font-bold;
-    font-weight: normal;
-    letter-spacing: 0.075rem;
-   } 
+   p strong {
+     letter-spacing: 0.1rem;
+   }
+
 }
 
 .protag__text {
   align-self: flex-start;
-  flex: 0 0 600px;
+  flex: 1 0 600px;
   p {
     max-width: 75ch;
   }
