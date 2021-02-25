@@ -47,18 +47,6 @@ button:focus {
   border-radius: 4rem;
 }
 
-.button--protag {
-  font-size: var(--font-md);
-  font-weight: normal;
-  text-transform: uppercase;
-  padding: 1.8rem 4rem;
-  margin: 0 $spacing-md;
-  // display: inline-block;
-  border-radius: 4.8rem;
-  color: $bgco;
-  border: 2px solid $bgco;
-}
-
 .nav__btn {
   text-align: center;
   margin: $spacing-lg 0;

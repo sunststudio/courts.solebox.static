@@ -516,16 +516,6 @@ button:focus {
   padding: 1.8rem 4.8rem;
   border-radius: 4rem; }
 
-.button--protag {
-  font-size: var(--font-md);
-  font-weight: normal;
-  text-transform: uppercase;
-  padding: 1.8rem 4rem;
-  margin: 0 4rem;
-  border-radius: 4.8rem;
-  color: #EDEDED;
-  border: 2px solid #EDEDED; }
-
 .nav__btn {
   text-align: center;
   margin: 8rem 0; }
@@ -688,7 +678,7 @@ button:focus {
 
 .protag {
   font-size: var(--font-sm);
-  background: #fff; }
+  background-color: #222222; }
   .protag p {
     font-size: var(--font-sm);
     line-height: 2.5rem;
@@ -699,16 +689,15 @@ button:focus {
   .protag__bar {
     display: flex; } }
 
-.protag__cover img {
-  width: 100%; }
-
 @media (min-width: 1200px) {
-  .protag__cover,
   .protag__body {
-    width: 50%; } }
+    width: 40%; }
+  .protag__cover {
+    max-width: 50%; } }
 
 .protag__body {
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  background-color: #fff; }
 
 .protag__cols .protag__content div {
   margin: 4rem 0; }
@@ -718,7 +707,8 @@ button:focus {
     padding-left: 4rem; } }
 
 .protag__content--bar {
-  padding: 2rem 0; }
+  background-color: #fff;
+  padding: 2rem var(--site-spacing); }
   .protag__content--bar div {
     margin: 4rem 0; }
   @media (min-width: 1200px) {
@@ -733,14 +723,25 @@ button:focus {
   flex: 1 0 300px; }
   .protag__facts p {
     letter-spacing: 0.05rem; }
-  .protag__facts p strong {
-    letter-spacing: 0.1rem; }
+    .protag__facts p strong {
+      letter-spacing: 0.1rem; }
 
 .protag__text {
   align-self: flex-start;
-  flex: 1 0 600px; }
-  .protag__text p {
-    max-width: 75ch; }
+  flex: 1 0 400px; }
+
+.button--protag {
+  font-size: var(--font-md);
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 1.8rem 4rem;
+  border-radius: 4.8rem;
+  color: #EDEDED;
+  border: 2px solid #EDEDED;
+  margin: 0 2rem; }
+  @media (min-width: 1600px) {
+    .button--protag {
+      margin: 0 8rem; } }
 
 .protag__btn {
   background-color: #D77247;
