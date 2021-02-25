@@ -556,6 +556,9 @@ button:focus {
   .l__title {
     order: 0; } }
 
+.l__no {
+  flex: 0 0 160px; }
+
 .l__entry > div {
   margin-right: 2rem; }
 
@@ -920,7 +923,8 @@ a:hover .arrow--back {
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
   transform: translateY(0%);
-  background-color: #EDEDED; }
+  background-color: #EDEDED;
+  background-color: #fff; }
 
 .headroom--top {
   background-color: transparent; }

@@ -25,10 +25,14 @@
 .l__title { order: 0; }
 }
 
+.l__no {
+  flex: 0 0 160px;
+}
 
 .l__entry > div {
   margin-right: 2rem;
 }
+
 .l__tag {
   @include sm {
     flex: 0 0 240px;
