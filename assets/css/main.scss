@@ -8,6 +8,7 @@
 @import "partials/typography";
 
 @import "partials/helper";
+@import "partials/animation";
 @import "partials/layout";
 @import "partials/nav";
 @import "partials/buttons";
@@ -15,10 +16,13 @@
 @import "partials/footer";
 
 @import "partials/landing";
+// components
+@import "components/protagonists";
+@import "components/images";
+@import "components/raffle";
+
 @import "partials/pages";
 @import "partials/archive";
-
-@import "partials/animation";
 
 // dist
 @import "dist/headroom";

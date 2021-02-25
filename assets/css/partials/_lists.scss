@@ -31,7 +31,7 @@
 }
 .l__tag {
   @include sm {
-    flex: 0 0 200px;
+    flex: 0 0 240px;
   }
 }
 
@@ -41,8 +41,9 @@
 }
 
 .l__title {
+  font-family: $font-bold;
+  font-weight: normal;
   margin-left: 2rem;
-  font-weight: bold;
   @include sm {
     overflow: hidden;
     white-space: nowrap;

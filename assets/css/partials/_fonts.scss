@@ -1,9 +1,35 @@
-// @font-face {
-//   font-family: 'webfont';
-//   src: url('/path/to/webfont.eot'); /* IE9 Compat Modes */
-//   src: url('/path/to/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-//        url('/path/to/webfont.woff') format('woff'),
-//        url('/path/to/webfont.ttf') format('truetype'); /* Safari, Android, iOS */
-//   font-weight: 400;
-//   font-style: normal;
-// }
+/**
+ * @license
+ * MyFonts Webfont Build ID 4020042, 2021-02-25T06:34:20-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: NHaasGroteskDSPro-55Rg by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/neue-haas-grotesk/pro-display-55-roman/
+ * 
+ * Webfont: NHaasGroteskDSPro-75Bd by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/neue-haas-grotesk/pro-display-75-bold/
+ * 
+ * 
+ * Webfonts copyright: Copyright &amp;#x00A9; 2013 Monotype Imaging Inc. All rights reserved.
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3d574a");
+  
+@font-face {
+  font-family: "NHaasGroteskDSPro-75Bd";
+  src: url('fonts/NHaasGroteskDSPro75Bd/font.woff2') format('woff2'), url('fonts/NHaasGroteskDSPro75Bd/font.woff') format('woff');
+}
+@font-face {
+  font-family: "NHaasGroteskDSPro-55Rg";
+  src: url('fonts/NHaasGroteskDSPro55Rg/font.woff2') format('woff2'), url('fonts/NHaasGroteskDSPro55Rg/font.woff') format('woff');
+}
+

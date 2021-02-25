@@ -8,6 +8,8 @@
 
 .site__name {
   text-transform: uppercase;
+  font-family: $font-bold;
+  font-weight: normal;
   font-size: var(--font-st);
   letter-spacing: 0;
   line-height: 1;

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("//hello.myfonts.net/count/3d574a");
 .reset-button {
   border: none;
   margin: 0;
@@ -217,6 +219,36 @@ img {
   max-width: 100%;
   display: block; }
 
+/**
+ * @license
+ * MyFonts Webfont Build ID 4020042, 2021-02-25T06:34:20-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: NHaasGroteskDSPro-55Rg by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/neue-haas-grotesk/pro-display-55-roman/
+ * 
+ * Webfont: NHaasGroteskDSPro-75Bd by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/neue-haas-grotesk/pro-display-75-bold/
+ * 
+ * 
+ * Webfonts copyright: Copyright &amp;#x00A9; 2013 Monotype Imaging Inc. All rights reserved.
+ * 
+ * © 2021 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: "NHaasGroteskDSPro-75Bd";
+  src: url("fonts/NHaasGroteskDSPro75Bd/font.woff2") format("woff2"), url("fonts/NHaasGroteskDSPro75Bd/font.woff") format("woff"); }
+
+@font-face {
+  font-family: "NHaasGroteskDSPro-55Rg";
+  src: url("fonts/NHaasGroteskDSPro55Rg/font.woff2") format("woff2"), url("fonts/NHaasGroteskDSPro55Rg/font.woff") format("woff"); }
+
 :root {
   --font-base: 52.5%;
   --font-sm: 1.6rem;
@@ -229,13 +261,17 @@ img {
   :root {
     --font-base: 62.5%; } }
 
+@media (min-width: 1200px) {
+  :root {
+    --font-hg: 8.4rem; } }
+
 html {
   font-size: var(--font-base);
   -webkit-font-smoothing: antialiased;
   text-align: left; }
 
 body {
-  font-family: "Helvetica Neue", sans-serif; }
+  font-family: "NHaasGroteskDSPro-55Rg", "Helvetica Neue", sans-serif; }
 
 p {
   font-size: var(--font-st);
@@ -252,6 +288,10 @@ h6 {
   line-height: 1;
   margin: 0;
   text-transform: uppercase; }
+
+h1, h2, h3 {
+  font-family: "NHaasGroteskDSPro-75Bd", "Helvetica Neue", sans-serif;
+  font-weight: normal; }
 
 h1 {
   font-size: var(--font-hg);
@@ -281,7 +321,8 @@ h4 {
   line-height: 1.5; }
 
 .bigprint {
-  font-weight: bold;
+  font-family: "NHaasGroteskDSPro-75Bd", "Helvetica Neue", sans-serif;
+  font-weight: normal;
   line-height: 1.25; }
   .bigprint p {
     font-size: var(--font-bg);
@@ -290,7 +331,8 @@ h4 {
 
 .bold,
 strong {
-  font-weight: bold; }
+  font-family: "NHaasGroteskDSPro-75Bd", "Helvetica Neue", sans-serif;
+  font-weight: normal; }
 
 .flex {
   display: flex; }
@@ -310,6 +352,45 @@ strong {
 
 .image__cover img {
   width: 100%; }
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible; }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
+
+.ticker__wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: content-box;
+  margin: 16rem 0;
+  padding-left: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #222222;
+  color: #EDEDED;
+  font-size: var(--font-md); }
+
+.ticker {
+  display: inline-block;
+  padding-right: 100%;
+  white-space: nowrap;
+  box-sizing: content-box;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s; }
+  .ticker__item {
+    display: inline-block;
+    margin: 0 4rem; }
 
 :root {
   --site-spacing: 1rem; }
@@ -363,6 +444,8 @@ strong {
 
 .site__name {
   text-transform: uppercase;
+  font-family: "NHaasGroteskDSPro-75Bd", "Helvetica Neue", sans-serif;
+  font-weight: normal;
   font-size: var(--font-st);
   letter-spacing: 0;
   line-height: 1;
@@ -413,6 +496,7 @@ button:focus {
 
 .button {
   font-size: 1.5rem;
+  letter-spacing: 0.05rem;
   border: 2px solid #222222;
   display: inline-block;
   padding: 1rem 2.2rem;
@@ -484,15 +568,16 @@ button:focus {
 
 @media (min-width: 600px) {
   .l__tag {
-    flex: 0 0 200px; } }
+    flex: 0 0 240px; } }
 
 .l__link {
   display: flex;
   align-items: center; }
 
 .l__title {
-  margin-left: 2rem;
-  font-weight: bold; }
+  font-family: "NHaasGroteskDSPro-75Bd", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  margin-left: 2rem; }
   @media (min-width: 600px) {
     .l__title {
       overflow: hidden;
@@ -593,6 +678,7 @@ button:focus {
   font-size: var(--font-sm);
   background: #fff; }
   .protag p {
+    font-size: var(--font-sm);
     line-height: 2.5rem;
     margin: 0; }
 
@@ -612,6 +698,12 @@ button:focus {
 .protag__body {
   padding-bottom: 2rem; }
 
+.protag__cols .protag__content div {
+  margin: 4rem 0; }
+
+.protag__bar .protag__link {
+  padding-left: 4rem; }
+
 .protag__content--bar {
   padding: 2rem 0; }
   .protag__content--bar div {
@@ -622,15 +714,16 @@ button:focus {
       .protag__content--bar div {
         margin: 0; } }
 
-.protag__cols .protag__content div {
-  margin: 4rem 0; }
-
 .protag__facts {
   text-transform: uppercase;
   line-height: 2.5rem;
   flex: 0 0 200px; }
+  .protag__facts dl {
+    letter-spacing: 0.05rem; }
   .protag__facts dt {
-    font-weight: bold; }
+    font-family: "NHaasGroteskDSPro-75Bd", "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.075rem; }
 
 .protag__text {
   align-self: flex-start;
@@ -645,7 +738,6 @@ button:focus {
   align-self: center; }
 
 .protag__link {
-  margin-left: auto;
   white-space: nowrap;
   display: flex; }
   .protag__link a {
@@ -769,39 +861,6 @@ a:hover .arrow--back {
 .archive--next {
   margin-left: auto; }
 
-@keyframes ticker {
-  0% {
-    transform: translate3d(0, 0, 0);
-    visibility: visible; }
-  100% {
-    transform: translate3d(-100%, 0, 0); } }
-
-.ticker__wrap {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  box-sizing: content-box;
-  margin: 16rem 0;
-  padding-left: 100%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: #222222;
-  color: #EDEDED;
-  font-size: var(--font-md); }
-
-.ticker {
-  display: inline-block;
-  padding-right: 100%;
-  white-space: nowrap;
-  box-sizing: content-box;
-  animation-name: ticker;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-duration: 30s; }
-  .ticker__item {
-    display: inline-block;
-    margin: 0 4rem; }
-
 .headroom {
   position: fixed;
   background-color: transparent;
@@ -811,6 +870,8 @@ a:hover .arrow--back {
   transition: transform 125ms linear; }
 
 .headroom--pinned {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
   transform: translateY(0%);
   background-color: #EDEDED; }
 
@@ -818,4 +879,6 @@ a:hover .arrow--back {
   background-color: transparent; }
 
 .headroom--unpinned {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
   transform: translateY(-100%); }

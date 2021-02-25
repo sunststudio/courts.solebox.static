@@ -16,6 +16,12 @@
   }
 }
 
+@media (min-width: 1200px) {                             
+  :root {
+  --font-hg: 8.4rem;
+  }
+}
+
 html {
   font-size: var(--font-base); 
   -webkit-font-smoothing: antialiased;
@@ -42,6 +48,11 @@ h6 {
   line-height: 1;
   margin: 0;
   text-transform: uppercase;
+}
+
+h1, h2, h3 {
+  font-family: $font-bold;
+  font-weight: normal;
 }
 
 h1 {
@@ -79,7 +90,8 @@ h4 {
 }
 
 .bigprint {
-  font-weight: bold;
+  font-family: $font-bold;
+  font-weight: normal;
   line-height: 1.25;
   p {
     font-size: var(--font-bg);
@@ -90,5 +102,6 @@ h4 {
 
 .bold,
 strong {
-  font-weight: bold;
+  font-family: $font-bold;
+  font-weight: normal;
 }
