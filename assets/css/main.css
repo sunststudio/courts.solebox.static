@@ -673,7 +673,7 @@ button:focus {
 .header {
   display: flex;
   align-items: flex-end;
-  margin-top: 12rem;
+  margin-top: 24rem;
   margin-bottom: 4rem; }
 
 .filter {
@@ -801,3 +801,21 @@ a:hover .arrow--back {
   .ticker__item {
     display: inline-block;
     margin: 0 4rem; }
+
+.headroom {
+  position: fixed;
+  background-color: transparent;
+  z-index: 99;
+  width: 100%;
+  will-change: transform;
+  transition: transform 125ms linear; }
+
+.headroom--pinned {
+  transform: translateY(0%);
+  background-color: #EDEDED; }
+
+.headroom--top {
+  background-color: transparent; }
+
+.headroom--unpinned {
+  transform: translateY(-100%); }
